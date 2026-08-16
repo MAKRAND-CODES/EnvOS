@@ -132,3 +132,29 @@ print(aqi)
 print(temperature)
 print(type("Bhopal"))
 print(type("Bhopal",))
+
+#### Creating a Set 
+#### Use curly braces
+
+pollutants = {"PM2.5","PM10","NO2","CO","CO2","PM10"}
+print(pollutants)
+
+### ADDING ELEMENTS 
+''' sets have : add()
+'''
+
+pollutants.add("NaS")
+print(pollutants)
+pollutants.remove("CO")
+print(pollutants)
+
+##### Now set operations
+temp = {25,30,35,40,42}
+time  = {"morning,afternoon,evening,midnight"}
+temp1 ={34,38,45,50,30}
+weather = temp | time
+print(weather)
+common = temp & temp1
+print(common)
+only_temp = temp - temp1
+print(only_temp)
