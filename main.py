@@ -98,3 +98,37 @@ envirnomental_data = [
 ]
 print(envirnomental_data[0][1])
 print(envirnomental_data[2][2])
+
+
+#### PYTHON TUPLES 
+## A tuple is ordered like a list , but it is immmutable
+
+## 1.Creating a tuple 
+
+##In List we basically do as follows : cities = ["BHopal","Indore","Delhi","Mumbai"]
+cities = ("Bhopal","Indore","Delhi","Mumbai")
+city = ("Bhopal",145,42.2)
+'''print(cities)
+print(city)
+print(cities[0])
+print(cities[1])
+print(cities[2])
+print(cities[3])
+print(city[0])
+print(city[1])
+print(city[2])
+'''
+city_data = ("Bhopal",145,38.5)
+#city_data[1]=150
+print(city_data[0])
+print(city_data[-1])
+print(city_data[1])
+print(len(city_data))
+
+###### TUPLE UNPACKING 
+state,aqi,temperature = city_data
+print(state)
+print(aqi)
+print(temperature)
+print(type("Bhopal"))
+print(type("Bhopal",))
