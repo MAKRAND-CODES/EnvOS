@@ -285,3 +285,88 @@ print(record["city"])
 print(record["aqi"])
 print(record["temperature"])
 print(record["humidity"])
+
+## Python Conditions --- if , elif , else
+"""Python syntax: 
+if condition:
+    #code
+
+example :
+
+aqi = 175 
+
+if aqi > 150:
+    print("Air quality is unhealthy")
+
+Output : Air quality is unhealthy
+Python uses indentation 
+There are no { } braces
+"""
+##Also the indentation is part of Python's syntax
+
+##now if+else->
+
+aqi = 90
+
+if aqi>200:
+    print("Very Unhealthy")
+elif aqi>150:
+    print("Unhealthy")
+elif aqi > 100:
+    print("Moderate")
+else:
+    print("Good")
+
+"""
+Here also order matters , 
+Now we have comparison operators :
+like -> 
+== equal to 
+!= not equal to 
+> greater than
+< less than
+>= greater than or equal to 
+<= less than or equal to
+
+"""
+## Here we have = -> means assignment and == means comparison 
+## Example of Comparison Operator is below :
+'''a = 10
+if ( 10 == 10):
+    print("true")
+else :
+    print("false")'''
+"""
+Here we have Logical Operators too:
+Python uses : 
+->and 
+->or 
+->not """
+
+## Example 
+aqi = 145
+temperature = 32 
+## AND 
+if aqi > 100 and temperature > 30:
+    print("High pollution and high temperature")
+##Here Both conditions must be true.
+
+# OR 
+
+if aqi > 150 or temperature > 40:
+    print("Environment warning")
+
+# not 
+is_raining = False
+if not is_raining:
+    print("No rainfall detected")
+
+# not reverse the Boolean value 
+# true -> false
+# false -> true
+
+# nested if 
+# Python uses indentation to define code blocks   
+
+
+
