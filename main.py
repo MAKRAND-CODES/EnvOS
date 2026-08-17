@@ -149,7 +149,7 @@ pollutants.remove("CO")
 print(pollutants)
 
 ##### Now set operations
-temp = {25,30,35,40,42}
+'''temp = {25,30,35,40,42}
 time  = {"morning,afternoon,evening,midnight"}
 temp1 ={34,38,45,50,30}
 weather = temp | time
@@ -157,4 +157,131 @@ print(weather)
 common = temp & temp1
 print(common)
 only_temp = temp - temp1
-print(only_temp)
+print(only_temp)'''
+
+record = ["Bhopal",145,32.5,68]
+
+###### Python Dictionaries
+record = {
+    "city":"Bhopal",
+    "aqi":145,
+    "temperature":32.5,
+    "humidity":68
+}
+'''
+dictionary = {
+    "key":value,
+    "key":value
+}
+'''
+
+"""
+Accessing values :
+environment[0]
+print(environment["city"])
+print(environment["aqi"])
+output : 145 
+List -> access by Index
+Dictionary -> access by key
+
+### Adding a new field 
+
+environment["wind_speed"] = 12.5
+now print(environment)
+
+--->So Dictionary are Mutable 
+--->environment["temperature"] = 33.2
+Now print(environment["temperature"])
+output -> 33.2
+### Removing a field:
+-> del environment["humidity"]
+now humidity is removed.
+Here we can also use the pop :
+humidity = environment.pop("humidity")
+
+### Checking a weather a key exists 
+
+## If "aqi" in environment:
+    print("AQI is available")
+
+output :  AQI is available.
+
+## get()
+->Its an important Python dictionary method.
+Suppose we have :
+
+environment = {
+    "city":"Bhopal",
+    "aqi" : 145
+}
+And here  If we do -> print(environment["temperature"])
+##Here we will get the raises a KeyError because the key doesn't exist.
+So instead we do print(environment.get("temperature",0)) , output 0
+Now here when we do print(environment.keys())
+so this will Getting all keys : 
+so here conceptually :
+->city 
+->aqi
+->temperature
+->humidity
+
+Now to get all the values :
+
+->print(environment.values())
+will give all the values.
+
+for key, value in environment.items():
+print(key,":",value)
+
+Output would be:
+{
+city : Bhopal
+aqi : 145
+temperature : 32.5
+humidity : 68
+}
+
+## Nested dictionaries 
+
+environment = {
+    "location":{
+        "city":"Bhopal",
+        "state":"Madhya Pradesh"
+    },
+    "measurements": {
+        "aqi":145,
+        "temperatures":32.5,
+        "humidity":68
+    }
+}
+
+// environment 
+    |
+    |---location
+    |   |---city
+    |   |---state
+    |---measurements
+        |----aqi
+        |---temperature
+        |---humidity
+Now to access the city : 
+print(environment["location"]["city"])
+print(environment["measurements"]["aqi"])
+print(environment["location"]["city"])
+
+//List -> Ordered Collection
+//Tuple -> Fixed ordered Collection
+//Set   -> Unique Collection
+//Dictionary -> Key -> value mapping
+"""
+
+record = {
+    "city" : "Jabalpur",
+    "aqi" : 198,
+    "temperature" : 34.99,
+    "humidity" : 30
+}
+print(record["city"])
+print(record["aqi"])
+print(record["temperature"])
+print(record["humidity"])
