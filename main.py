@@ -30,7 +30,7 @@ print(wind_speed)
 
 #print(city1)
 #print(city2)
-
+"""
 state = "Bhopal"
 city = "Indore"
 
@@ -176,6 +176,7 @@ dictionary = {
 '''
 
 """
+"""
 Accessing values :
 environment[0]
 print(environment["city"])
@@ -274,7 +275,7 @@ print(environment["location"]["city"])
 //Set   -> Unique Collection
 //Dictionary -> Key -> value mapping
 """
-
+"""
 record = {
     "city" : "Jabalpur",
     "aqi" : 198,
@@ -287,7 +288,9 @@ print(record["temperature"])
 print(record["humidity"])
 
 ## Python Conditions --- if , elif , else
-"""Python syntax: 
+"""
+"""
+Python syntax: 
 if condition:
     #code
 
@@ -305,7 +308,7 @@ There are no { } braces
 ##Also the indentation is part of Python's syntax
 
 ##now if+else->
-
+"""
 aqi = 90
 
 if aqi>200:
@@ -318,6 +321,7 @@ else:
     print("Good")
 
 """
+"""
 Here also order matters , 
 Now we have comparison operators :
 like -> 
@@ -327,7 +331,7 @@ like ->
 < less than
 >= greater than or equal to 
 <= less than or equal to
-
+"""
 """
 ## Here we have = -> means assignment and == means comparison 
 ## Example of Comparison Operator is below :
@@ -337,12 +341,14 @@ if ( 10 == 10):
 else :
     print("false")'''
 """
+
+"""
 Here we have Logical Operators too:
 Python uses : 
 ->and 
 ->or 
 ->not """
-
+"""
 ## Example 
 aqi = 145
 temperature = 32 
@@ -368,5 +374,83 @@ if not is_raining:
 # nested if 
 # Python uses indentation to define code blocks   
 
+## Python for loop 
+## for item in collection:
+##    code
 
+cities = ["Bhopal","Indore","Delhi","Mumbai"]
+
+for city in cities:
+    print(city)
+
+## For loop with range 
+# range()
+
+for i in range(4):
+    print(i)
+### Start and stop 
+range(start , stop)
+for i in range(1,4):
+    print(i)
+
+##Now we have step too , along with start,stop,step 
+# range(start , stop , step )
+for i in range(0,4,1):
+    print(i)
+
+'''
+while condition:
+    #code 
+Example: 
+count = 1
+
+while count <= 5:
+    print(count)
+    count += 1
+
+output would be : 
+1
+2
+3
+4
+5
+------> Similarly we have break and continue , where break is stop the statement
+at the particular point where the condition is applied ,
+While the continue statement skips the current line and continues from the remaining line ther.
+"""
+## NOW WE HAVE FUNCTIONS IN PYTHON 
+## CREATING THE FIRST FUNCTION IN PYTHON !! 
+def greet():
+    print("Hello world")
+
+greet()
+
+def show_platform_entry():
+    print("=====================================")
+    print("======WELCOME TO EnvOS======")
+    print("=====================================")
+    print("An Ai driven urban intelligence platform")
+
+show_platform_entry()
+
+##Npw introducing the parameters with functions 
+def show_platform_info(name):
+    print("=================================")
+    print("                EnvOS Platform")
+    print(f"Welcome,{name}!")
+    print("An AI Driven Urban Intelligence Platform")
+    print()
+
+show_platform_info("Makrand")
+
+## Here name is a parameter,and when we call the show_platform_info("Makrand")
+##Here the value gets passed into the name.
+
+## Now we have Return Values :
+## here we have example below as, 
+def get_platform_name():
+    return "EnvOS"
+
+platform = get_platform_name()
+print(platform)
 
