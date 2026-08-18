@@ -454,3 +454,16 @@ def get_platform_name():
 platform = get_platform_name()
 print(platform)
 
+'''
+Here the main difference beween the return and normal print like 
+return EnvOS and print("EnvOS) is that print displays only the given value
+while the return,Sends a Value to the caller function and here the caller is 
+platform = get_platform_name() which returns the same EnvOS.
+'''
+from envos_platform import show_platform_info,get_platform_name
+
+show_platform_info("Makrand")
+
+platform = get_platform_name()
+
+print("Platform name:",platform)
