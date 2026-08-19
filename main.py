@@ -467,3 +467,47 @@ show_platform_info("Makrand")
 platform = get_platform_name()
 
 print("Platform name:",platform)
+
+## FILE HANDLING IN PYTH0N 
+## Here we have files to exchange(import / export) the data, between the files that is suppose i have two files
+## environment.csv and environment.json no i want to store t he information between the two file then we will use Python file Handling
+## Create files
+##      |
+## Open files
+##      |
+## Read files 
+##      |
+## Write files
+##      |
+## close files
+#Use \n escape character for new line
+
+file = open("notes.txt","w")
+file.write("EnvOS environmental intelligence platform\n")
+file.write("Learning , Practicing , Reading all the way")
+file.close()
+
+## Reading the file 
+file = open("notes.txt","r")
+content = file.read()
+print(content)
+file.close()
+
+## Here we have,content=file.read() which stores the content that is read by the file.
+## The files gives the data->Python stores in it.
+## Another method i can use is : 
+with open("notes.txt","r") as file:
+    content = file.read()
+print(content)
+##Here by using with open we didnt write the file.close()
+##Because it is automatically closed,once the file has been read.
+
+with open("environment.txt","w") as file:
+    file.write("City: Indore\n")
+    file.write("Temperature: 32.5 C\n")
+    file.write("Humidity: 61%\n")
+    file.write("PM2.5:82\n")
+
+with open("environment.txt","r") as file:
+    data = file.read();
+print(data)

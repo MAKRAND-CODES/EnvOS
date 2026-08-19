@@ -1,0 +1,4 @@
+City: Indore
+Temperature: 32.5 C
+Humidity: 61%
+PM2.5:82
