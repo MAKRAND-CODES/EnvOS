@@ -1,0 +1,7 @@
+city,temperature,humidity,pm25 //Schema/Header
+Indore,32.5,61,82   //Observation 
+Bhopal,31.2,58,71
+Raipur,33.1,64,91
+->Now reading CSV manually with Python so we have built in module 
+that is the csv which is the import csv
+

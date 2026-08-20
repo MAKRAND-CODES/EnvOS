@@ -511,3 +511,32 @@ with open("environment.txt","w") as file:
 with open("environment.txt","r") as file:
     data = file.read();
 print(data)
+
+##CSV Handling in Python 
+import csv
+with open("environment.csv","r")as file:
+    reader = csv.reader(file)
+
+    for row in reader:
+        print(row)
+## Now suppose we want the average temperature
+'''total = total + row[1]
+row[1] is a string, we need to convert float(row[1])'''
+
+
+
+total_temperature = 0
+count = 0
+
+with open("environment.csv","r")as file:
+    reader = csv.reader(file)
+
+    next(reader)
+
+    for row in reader:
+        temperature=float(row[temperature])
+
+        total_temperature += temperature
+        count += 1
+    average_temperature = total_temperature / count
+    print("Average_temperature:",average_temperature)
